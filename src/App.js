@@ -1,6 +1,6 @@
 
 import './App.css';
-import ReactDOM from 'react'
+
 
 function Names(passer) {
   return <h1>(This is a prop example) {passer.name}</h1>
