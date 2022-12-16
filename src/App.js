@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import ReactDOM from 'react'
+
+function Names(passer) {
+  return <h1>(This is a prop example) {passer.name}</h1>
+}
+
+function Student() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>The name of the best student is</h1>
+      <Names name={"John"}/>
+
     </div>
   );
 }
 
-export default App;
+export default Student;
